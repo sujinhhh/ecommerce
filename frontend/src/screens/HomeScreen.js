@@ -21,7 +21,7 @@ const HomeScreen = {
           (product) => `
       <li>
         <div class="product">
-          <a href="/#/product/${product._id}">
+          <a href="/#/product/${product._id}" class='image-container'>
             <img src="${product.image}" alt="${product.name}" />
           </a>
         <div class="product-name">

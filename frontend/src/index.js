@@ -13,6 +13,7 @@ const routes = {
 
 const router = async () => {
   const request = parseRequestUrl();
+
   const parseUrl =
     (request.resource ? `/${request.resource}` : "/") +
     (request.id ? "/:id" : "") +
