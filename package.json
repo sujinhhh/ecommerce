@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --watch backend --exec babel-node backend/server.js",
+    "server": "nodemon server.js --exec babel-node", //for spinning up dev server which updates using Nodemon
+  "heroku-postbuild": "npm install", //called automatically when application is build on Heroku server
+  "start": "babel-node server.js" ,
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
