@@ -1,1 +1,1 @@
-web: sh -c 'cd ./backend/ && server.js'
+web: sh -c 'cd ./backend/ && exec server.js'
