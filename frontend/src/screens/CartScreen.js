@@ -6,6 +6,7 @@ import { getCartItems, setCartItems } from "../localStorage";
 const addToCart = (item, forceUpdate = false) => {
   let cartItems = getCartItems();
   const existItem = cartItems.find((x) => x.product === item.product);
+
   if (existItem) {
     if (forceUpdate) {
       cartItems = cartItems.map((x) =>
@@ -22,6 +23,7 @@ const addToCart = (item, forceUpdate = false) => {
 };
 const removeFromCart = (id) => {
   setCartItems(getCartItems().filter((x) => x.product !== id));
+  console.log(parseRequestUrl());
   if (id === parseRequestUrl().id) {
     document.location.hash = "/cart";
   } else {
@@ -89,10 +91,11 @@ const CartScreen = {
                 <div>
                   Qty: 
                   <select class="qty-select" id="${item.product}">
+               
                   ${[...Array(item.countInStock).keys()].map((x) =>
                     item.qty === x + 1
-                      ? `<option selected value="${x + 1}">${x + 1}</option>`
-                      : `<option  value="${x + 1}">${x + 1}</option>`
+                      ? `<option selected  value="${x + 6}">${x + 1}</option>`
+                      : `<option value="${x + 1}">${x + 1}</option>`
                   )}  
 
                   </select>

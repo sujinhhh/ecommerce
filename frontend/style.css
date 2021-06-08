@@ -106,20 +106,28 @@ p {
 }
 
 button {
+  cursor: pointer;
   font: 1.3rem helvetica;
   padding: 0.8rem;
   border: 0.1rem;
   border-radius: 1rem;
 }
-button:hover {
-  border: 0.1rem #404040 solid;
+button.primary:hover {
+  background-color: lightsalmon;
 }
 
 button.primary {
   background-color: rgb(236, 158, 90);
 }
 .fw {
-  width: 100%;
+  width: 90%;
+}
+
+.success {
+  color: green;
+}
+.error {
+  color: brown;
 }
 
 .grid-container {
@@ -309,7 +317,7 @@ footer {
   border-radius: 0.5rem;
   background-color: #f8f8f8;
   padding: 1rem;
-  max-width: 30rem;
+  max-width: 42rem;
 }
 
 /*  Cart  */
@@ -378,3 +386,6 @@ footer {
   font-size: 1.3rem;
   padding: 0.5rem;
 }
+
+/*  Company  */
+

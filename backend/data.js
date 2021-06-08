@@ -9,7 +9,7 @@ export default {
       brand: "Tiffany & Co.",
       rating: 4.5,
       numReviews: 10,
-      countInStock: 6,
+      countInStock: 1,
     },
     {
       _id: "2",
