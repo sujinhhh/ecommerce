@@ -1,1 +1,1 @@
-web: npm start --prefix server.js
+web: sh -c 'cd ./backend/ && server.js'
