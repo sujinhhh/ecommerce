@@ -1,8 +1,6 @@
-# ecommerce
+# E-commerce Site
 
-## frontend : JavaScript, CSS
-
-## backend : Node JS
+### 💜 frontend : JavaScript, CSS,  💛 backend : Node JS
 
 
 ```
